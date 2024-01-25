@@ -1,0 +1,14 @@
+{
+  "name": "dfb4ea389441745e",
+  "main": "dfb4ea389441745e@139.js",
+  "version": "139.0.0",
+  "homepage": "https://observablehq.com/d/dfb4ea389441745e",
+  "author": {
+    "name": "java man's Workspace",
+    "url": "https://observablehq.com/@java-man-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
