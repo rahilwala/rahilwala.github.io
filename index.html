@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>CS485 Univariate and Bivariate Data: NBA Statistics Across 2014-2015 Season</title>
+<title>CS485 Trivariate and Geographic Transforms: NBA Statistics Across 2014-2015 Season</title>
 <link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
-    <div id="observablehq-intro-d0e0e777"></div>
-    <div id="observablehq-plot1-d0e0e777"></div>
-    <div id="observablehq-plot2-d0e0e777"></div>
-    <div id="observablehq-table-d0e0e777"></div>
-    <p>Credit: <a href="https://observablehq.com/d/dfb4ea389441745e@220">CS485 Univariate and Bivariate Data: NBA Statistics Across 2014-2015 Season by java man&#039;s Workspace</a></p>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/dfb4ea389441745e@220.js?v=4";
-    new Runtime().module(define, name => {
-      if (name === "intro") return new Inspector(document.querySelector("#observablehq-intro-d0e0e777"));
-      if (name === "plot1") return new Inspector(document.querySelector("#observablehq-plot1-d0e0e777"));
-      if (name === "plot2") return new Inspector(document.querySelector("#observablehq-plot2-d0e0e777"));
-      if (name === "table") return new Inspector(document.querySelector("#observablehq-table-d0e0e777"));
-    });
-    </script>
-</body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
