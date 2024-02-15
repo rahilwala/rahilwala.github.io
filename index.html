@@ -3,12 +3,18 @@
 <title>CS485 Trivariate and Geographic Transforms: NBA Statistics Across 2014-2015 Season</title>
 <link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
+    <div id="observablehq-intro-e26b2dca"></div>
+<p>Credit: <a href="https://observablehq.com/d/bbd08d3ebfe36af8@525">CS485 Trivariate and Geographic Transforms: NBA Statistics Across 2014-2015 Season by java man&#039;s Workspace</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
-
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
-
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
-
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/bbd08d3ebfe36af8@525.js?v=4&api_key=63dbe326c763111290d49240386611b672f8d8a9";
+new Runtime().module(define, name => {
+  if (name === "intro") return new Inspector(document.querySelector("#observablehq-intro-e26b2dca"));
+});
 </script>
+
+<iframe width="100%" height="754" frameborder="0"
+  src="https://observablehq.com/embed/bbd08d3ebfe36af8@530?cells=map&api_key=63dbe326c763111290d49240386611b672f8d8a9"></iframe>
+    </body>
